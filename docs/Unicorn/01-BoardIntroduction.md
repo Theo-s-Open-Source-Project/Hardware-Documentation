@@ -9,6 +9,7 @@
 Unicorn 设计参考了 YuzuKi 大佬的柚木PI-蜥蜴的设计，基于全志 V851s 芯片。
 
 - SOC：单核 ARM Cortex-A7@900Mhz 运行 linux 单核 RISC-V E907@600Mhz 运行 RTOS
+- NPU: 最大算力0.5Tops支持 支持TensorFlow、Caffe、Tflite、和Onnx等多种深度学习框架
 - DDR：内置 SIP 64 MB DDR2
 - Flash: 128MB SPI NandFlash 
 - Display:   支持 1*2-lane MIPI DSI 输出，最大支持 1280x720@60fps
