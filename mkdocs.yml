@@ -1,0 +1,143 @@
+# Project information
+site_name: My Docs
+site_url: https://github.com/Theo-s-Open-Source-Project/Hardware-Documentation.git
+site_author: SHZENG
+site_description: >-
+  SHZENG boards Docs Start Page.
+
+# Repository
+repo_name: Theo-s-Open-Source-Project/Hardware-Documentation
+repo_url: https://github.com/Theo-s-Open-Source-Project/Hardware-Documentation
+
+# Copyright
+copyright: Copyright &copy; 2023 Theo Tsang
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    # - scheme: default
+    #   primary: teal
+    #   accent: indigo
+    #   toggle:
+    #     icon: material/brightness-7
+    #     # icon: material/weather-night
+    #     name: Switch to dark mode
+    # - scheme: slate
+    #   primary: indigo
+    #   accent: indigo
+    #   toggle:
+    #     icon: material/brightness-4
+    #     # icon: material/weather-sunny
+    #     name: Switch to light mode
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  language: zh
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: logo.png
+  icon:
+    logo: logo
+    
+# Plugins
+
+extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- # 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.    
+  homepage: https://shzeng.cn
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Theo-Tsang
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@5A_5348
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/5A_5348
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Español
+      link: /es/
+      lang: es
+    - name: 中文
+      link: /zh/
+      lang: zh
+
+# Page tree
+nav:
+  - 根页面: 'index.md'
+  # - RhinoPi:  
+  - Unicorn:
+    - 主板简介: 'Unicorn/01-BoardIntroduction.md'     
+  - 关于本站: 'About.md'
+  
+extra_javascript:
+  - javascripts/shortcuts.js
+
+extra_css:
+  - stylesheets/extra.css
